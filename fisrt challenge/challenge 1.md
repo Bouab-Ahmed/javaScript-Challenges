@@ -6,6 +6,7 @@ You will be given a number and you will need to return it as a string in Expande
 expandedForm(12); // Should return '10 + 2'
 expandedForm(42); // Should return '40 + 2'
 expandedForm(70304); // Should return '70000 + 300 + 4'
+expandedForm(703.12); // Should return '700 + 3 + 1/10 + 2/100'
 ```
 
 ## Note
