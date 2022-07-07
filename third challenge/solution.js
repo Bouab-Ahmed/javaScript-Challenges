@@ -1,6 +1,3 @@
-// let chaine="naDjiba";
-//let chaine="Hi there";
-
 // function camelCasing(chaine) {
 //   if (chaine.charAt(0) == chaine.charAt(0).toUpperCase()) {
 //     console.log('Hey this is not a camel case!');
@@ -18,17 +15,18 @@
 // }
 // console.log(camelCasing(chaine));
 
+// const camelCasing = (chaine) => {
+//   const arr = chaine.split(''); //['c','a','m','e','l','C','a','s','i','n','g']
+//   return arr
+//     .map((char) => (char === char.toUpperCase() ? ` ${char}` : char))
+//     .join('');
+// };
+
 let chaine = 'camelCasing';
-const camelCasing = (chaine) => {
+const camelCasing2 = (chaine) => {
   return chaine.replace(/([A-Z])/g, ' $1');
 };
 
-const camelCasing2 = (string) => {
-  return [...string]
-    .map((char) => {
-      return char === char.toUpperCase() ? ` ${char}` : char;
-    })
-    .join('');
-};
+const a = 2;
 
 console.log(camelCasing2(chaine));
